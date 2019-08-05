@@ -48,14 +48,14 @@ function Cardgroup() {
           name={friends[9].name}
           image={friends[9].image}
         />
-        <PictureCard
+        {/* <PictureCard
           name={friends[10].name}
           image={friends[10].image}
         />
         <PictureCard
           name={friends[11].name}
           image={friends[11].image}
-        />
+        /> */}
       </Wrapper>
     </div>
   );
