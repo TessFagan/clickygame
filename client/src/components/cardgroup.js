@@ -1,19 +1,33 @@
 import React from "react";
-import Wrapper from "./Wrapper/wrapper";
-import PictureCard from "./picturecard";
 import friends from "./friends.json";
+import "./style.css";
 
-function Cardgroup() {
-  const pictureCards = friends.map(friend => <PictureCard
-    name={friend.name}
-    image={friend.image}
-  />);
+function Cardgroup(props) {
+
+
+  const pictureCards = friends.map(friend =>
+    <div className="card" onClick={props.handleClick}>
+      <div className="img-container">
+        <img
+          key={friend.id}
+          alt={friend.name}
+          src={friend.image}
+          id={friend.id}
+        />
+      </div>
+    </div>);
+
+  friends.map(function (friend) { console.log(friend) });
+
+
+
+  console.log(pictureCards)
+
   return (
-    <div>
-      <Wrapper>
-        {pictureCards}
-      </Wrapper>
-    </div>
+
+    <div className="wrapper">
+      {pictureCards}
+    </div >
   );
 }
 
