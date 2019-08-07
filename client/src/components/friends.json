@@ -2,61 +2,73 @@
   {
     "id": 1,
     "name": "bulb",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest?cb=20140328190757"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest?cb=20140328190757",
+    "clicked": false
   },
   {
     "id": 2,
     "name": "char",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png/revision/latest?cb=20140724195345"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png/revision/latest?cb=20140724195345",
+    "clicked": false
   },
   {
     "id": 3,
     "name": "Squir",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest?cb=20140328191525"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest?cb=20140328191525",
+    "clicked": false
   },
   {
     "id": 4,
     "name": "pika",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/0/0d/025Pikachu.png/revision/latest?cb=20140328192412"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/0/0d/025Pikachu.png/revision/latest?cb=20140328192412",
+    "clicked": false
   },
   {
     "id": 5,
     "name": "karp",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/0/02/129Magikarp.png/revision/latest?cb=20140328210352"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/0/02/129Magikarp.png/revision/latest?cb=20140328210352",
+    "clicked": false
   },
   {
     "id": 6,
     "name": "eve",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/e/e2/133Eevee.png/revision/latest?cb=20140328210732"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/e/e2/133Eevee.png/revision/latest?cb=20140328210732",
+    "clicked": false
   },
   {
     "id": 7,
     "name": "snor",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/f/fb/143Snorlax.png/revision/latest?cb=20140328211202"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/f/fb/143Snorlax.png/revision/latest?cb=20140328211202",
+    "clicked": false
   },
   {
     "id": 8,
     "name": "articun",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/4/4e/144Articuno.png/revision/latest?cb=20140328211202"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/4/4e/144Articuno.png/revision/latest?cb=20140328211202",
+    "clicked": false
   },
   {
     "id": 9,
     "name": "zap",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/e/e3/145Zapdos.png/revision/latest?cb=20140328211202"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/e/e3/145Zapdos.png/revision/latest?cb=20140328211202",
+    "clicked": false
   },
   {
     "id": 10,
     "name": "molt",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/1/1b/146Moltres.png/revision/latest?cb=20140328211203"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/1/1b/146Moltres.png/revision/latest?cb=20140328211203",
+    "clicked": false
   },
   {
     "id": 11,
     "name": "dratini",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/c/cc/147Dratini.png/revision/latest?cb=20140328211203"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/c/cc/147Dratini.png/revision/latest?cb=20140328211203",
+    "clicked": false
   },
   {
     "id": 12,
     "name": "mew",
-    "image": "https://vignette.wikia.nocookie.net/pokemon/images/b/b1/151Mew.png/revision/latest?cb=20140328211459"
+    "image": "https://vignette.wikia.nocookie.net/pokemon/images/b/b1/151Mew.png/revision/latest?cb=20140328211459",
+    "clicked": false
   }
 ]

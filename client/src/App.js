@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Cardgroup from "./components/cardgroup";
 import Navbar from 'react-bootstrap/Navbar'
+import Instructions from "./components/instructions";
+
 
 class App extends Component {
   render() {
@@ -8,7 +10,6 @@ class App extends Component {
       <div className="App">
         <Navbar>
           <h1>Clicky Game!</h1>
-          <h1> Click an Image to Begin</h1>
           <div className="collapse navbar-collapse" id="navbarMenu">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
@@ -20,6 +21,7 @@ class App extends Component {
             </ul>
           </div>
         </Navbar>
+        <Instructions />
         <Cardgroup />
       </div >
     );
