@@ -11,16 +11,24 @@ class App extends Component {
   state = {
     currentscore: 0,
     highscore: 0,
-    clicked: " "
+    clicked: [],
+    clickedArray: [],
   };
 
-  handleClick = () => {
+  // made an array to store each id of whats been clicked. then i will check against whats been clicked in the array
+
+  handleClick = (e) => {
+    console.log("YO" + e.target.id)
+    // let id = e.target.id
+    // console.log(id)
     this.setState({
       currentscore: this.state.currentscore + 1,
       highscore: this.state.currentscore + 1,
-      clicked: true
+      clicked: e.target.id,
+      clickedArray: this.state.clickedArray.concat(e.target.id)
     });
-    console.log(this)
+    console.log(this.state.clicked)
+    console.log(this.state.clickedArray)
   };
 
   render() {
@@ -42,7 +50,7 @@ class App extends Component {
         </Navbar>
         <Instructions />
         <Wrapper>
-          <Cardgroup handleClick={this.handleClick} state={this.state} />
+          <Cardgroup handleClick={this.handleClick} state={this.state} name="tess" />
         </Wrapper>
       </div >
     );

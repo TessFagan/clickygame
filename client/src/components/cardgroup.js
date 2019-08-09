@@ -6,7 +6,7 @@ function Cardgroup(props) {
 
 
   const pictureCards = friends.map(friend =>
-    <div className="card" onClick={props.handleClick} state={props.state} key={friend.id}>
+    <div className="card" onClick={props.handleClick} state={props.state} name={props.name} key={friend.id}>
       <div className="img-container">
         <img
           alt={friend.name}
@@ -18,7 +18,7 @@ function Cardgroup(props) {
     </div>);
 
 
-  console.log(pictureCards)
+  // console.log(pictureCards)
 
   return (
 
