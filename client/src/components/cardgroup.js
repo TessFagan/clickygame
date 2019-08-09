@@ -4,24 +4,20 @@ import "./style.css";
 
 function Cardgroup(props) {
 
-
   const pictureCards = friends.map(friend =>
-    <div className="card" onClick={props.handleClick} state={props.state} name={props.name} key={friend.id}>
+    <div className="card" onClick={props.handleClick} key={friend.id}>
       <div className="img-container">
         <img
           alt={friend.name}
           src={friend.image}
           id={friend.id}
-          clicked={friend.clicked}
         />
       </div>
     </div>);
 
-
-  // console.log(pictureCards)
+  console.log("picture" + pictureCards.length)
 
   return (
-
     <div className="wrapper">
       {pictureCards}
     </div >
