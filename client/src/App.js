@@ -15,7 +15,7 @@ class App extends Component {
     clickedArray: [],
   };
 
-  // made an array to store each id of whats been clicked. then i will check against whats been clicked in the array
+  // made an array to store each id of whats been clicked. then i will check against whats
 
   handleClick = (e) => {
     console.log("YO" + e.target.id)
