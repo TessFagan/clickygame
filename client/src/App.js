@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Cardgroup from "./components/cardgroup";
 import Navbar from 'react-bootstrap/Navbar'
 import Instructions from "./components/instructions";
+import friends from "./components/friends.json";
 
 class App extends Component {
 
@@ -9,30 +10,7 @@ class App extends Component {
     currentscore: 0,
     clicked: [],
     clickedArray: [],
-  };
-
-  // made an array to store each id of whats been clicked. then i will check against whats in the array
-
-  handleClick = (e) => {
-    console.log("YO" + e.target.id)
-    if (this.state.clickedArray.indexOf(e.target.id) > -1 === false) {
-      console.log("hasnt been clicked before")
-      console.log(this.state.clickedArray.indexOf(e.target.id))
-      // Cardgroup.shuffle()
-      this.setState({
-        currentscore: this.state.currentscore + 1,
-        clicked: e.target.id,
-        clickedArray: this.state.clickedArray.concat(e.target.id)
-      });
-    }
-    else {
-      console.log("already clicked")
-      this.setState({
-        currentscore: 0,
-        clicked: [],
-        clickedArray: []
-      });
-    }
+    friends: [...friends]
   };
 
   shuffle = (pictureCards) => {
@@ -48,6 +26,36 @@ class App extends Component {
     return pictureCards;
   };
 
+  // made an array to store each id of whats been clicked. then i will check against whats in the array
+
+  handleClick = (e) => {
+    // console.log("YO" + e.target.id)
+
+    if (this.state.clickedArray.indexOf(e.target.id) < 0) {
+      console.log("hasnt been clicked before")
+      console.log(this.state.clickedArray.indexOf(e.target.id))
+      // Cardgroup.shuffle()
+      this.setState({
+        currentscore: this.state.currentscore + 1,
+        clicked: e.target.id,
+        clickedArray: this.state.clickedArray.concat(e.target.id)
+      });
+    }
+    else {
+      console.log("already clicked")
+      this.setState({
+        currentscore: 0,
+        clicked: [],
+        clickedArray: [],
+        friends: [...friends]
+      });
+    }
+
+    this.setState({ friends: this.shuffle(this.state.friends) });
+  };
+
+
+
   render() {
 
     return (
@@ -59,14 +67,11 @@ class App extends Component {
               <li className="nav-item">
                 <a className="nav-link">Current Score: {this.state.currentscore}</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link">ClickedArray:{this.state.clickedArray}</a>
-              </li>
             </ul>
           </div>
         </Navbar>
         <Instructions />
-        <Cardgroup handleClick={this.handleClick} shuffle={this.shuffle} />
+        <Cardgroup friends={this.state.friends} handleClick={this.handleClick} shuffle={this.shuffle} />
       </div >
     );
   }

@@ -1,10 +1,9 @@
 import React from "react";
-import friends from "./friends.json";
 import "./style.css";
 
 function Cardgroup(props) {
 
-  const pictureCards = friends.map(friend =>
+  const pictureCards = props.friends.map(friend =>
     <div className="card" onClick={props.handleClick} key={friend.id}>
       <div className="img-container">
         <img
