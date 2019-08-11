@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/TessFagan/clickygame/issues"
   },
-  "homepage": "https://github.com/TessFagan/clickygame#readme"
+  "homepage": "https://github.com/TessFagan/clickygame#readme",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }

@@ -4,14 +4,17 @@
   "description": "Mern Demo",
   "private": true,
   "proxy": "http://localhost:3001/",
+  "homepage": "https://tessfagan.github.io/clickygame",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.6.3",
     "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.6.3",
     "react-scripts": "^2.1.1"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
