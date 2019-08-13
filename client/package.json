@@ -5,6 +5,10 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "homepage": "https://tessfagan.github.io/clickygame",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TessFagan/clickygame.git"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "2.0.0",
